@@ -194,7 +194,7 @@ Diaporama
     z-index: 3;
     margin-left: 1%;
     position: relative;
-    bottom: 1%;
+    top: 1%;
 }
 
 .slide {
