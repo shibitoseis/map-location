@@ -41,11 +41,13 @@ var reservation = {
 			}
 	},
 
-// Données contenues dans sessionStorage
+// Données contenues dans sessionStorage & localStorage
 	webStorage : function() {
 		sessionStorage.statusReservation = true;
 		sessionStorage.nomStationReserver = currentStation.nom;
 		sessionStorage.dureeReservation = reservationValidity * 60;
+		localStorage.currentUsername = $('#prenom');
+		localStorage.currentUserfirstname = $('#nom');
 	},
 
 // Affiche les différentes durée de la réservation
