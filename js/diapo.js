@@ -75,15 +75,14 @@ var Diaporama = {
 		var that = this;
 		slideInterval = setInterval(function () {
 			that.avancerDiapo();
-		}, 5000);
-		$('#playButton').click(function () {
-                       $('#conteneur-diapo').carousel('cycle');
-                   });
-                   $('#pauseButton').click(function () {
-                       $('#conteneur-diapo').carousel('pause');
-                   });
-					
+		}, 5000);			
 	},
+	$('#playButton').click(function () {
+                       that.sliderAuto();
+                   });
+        $('#pauseButton').click(function () {
+                       that.sliderOff();
+                   });
 
 	sliderOff: function () {
 		clearInterval(slideInterval);
