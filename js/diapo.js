@@ -76,6 +76,12 @@ var Diaporama = {
 		slideInterval = setInterval(function () {
 			that.avancerDiapo();
 		}, 5000);
+		$('#playButton').click(function () {
+                       $('#conteneur-diapo').carousel('cycle');
+                   });
+                   $('#pauseButton').click(function () {
+                       $('#conteneur-diapo').carousel('pause');
+                   });
 					
 	},
 
