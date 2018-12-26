@@ -46,8 +46,8 @@ var reservation = {
 		sessionStorage.statusReservation = true;
 		sessionStorage.nomStationReserver = currentStation.nom;
 		sessionStorage.dureeReservation = reservationValidity * 60;
-		localStorage.setItem('prenom','#prenom');
-		localStorage.setItem('nom','#nom');
+		localStorage.setItem('prenom',$('#prenom'));
+		localStorage.setItem('nom',$('#nom'));
 		localStorage.getItem('prenom');
 		localStorage.getItem('nom');
 		localStorage.setItem('nom', document.querySelector("input").value);
