@@ -48,6 +48,8 @@ var reservation = {
 		sessionStorage.dureeReservation = reservationValidity * 60;
 		localStorage.setItem('prenom','#prenom');
 		localStorage.setItem('nom','#nom');
+		localStorage.getItem('prenom');
+		localStorage.getItem('nom');
 	},
 
 // Affiche les différentes durée de la réservation
