@@ -50,7 +50,8 @@ var reservation = {
 		localStorage.setItem('nom','#nom');
 		localStorage.getItem('prenom');
 		localStorage.getItem('nom');
-		localStorage.setItem("nom", document.querySelector("input").value);
+		localStorage.setItem('nom', document.querySelector("input").value);
+		 var name = localStorage.getItem('nom');
 	},
 
 // Affiche les différentes durée de la réservation
