@@ -46,12 +46,8 @@ var reservation = {
 		sessionStorage.statusReservation = true;
 		sessionStorage.nomStationReserver = currentStation.nom;
 		sessionStorage.dureeReservation = reservationValidity * 60;
-		localStorage.setItem('prenom',$('#prenom'));
-		localStorage.setItem('nom',$('#nom'));
-		localStorage.getItem('prenom');
-		localStorage.getItem('nom');
-		localStorage.setItem('nom', document.querySelector("input").value);
-		 var name = localStorage.getItem('nom');
+		var couleur = $('#Nom')
+		localStorage.setItem("couleur", couleur);
 	},
 
 // Affiche les différentes durée de la réservation
