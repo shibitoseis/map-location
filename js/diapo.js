@@ -77,6 +77,7 @@ var Diaporama = {
 			that.avancerDiapo();
 		}, 5000);			
 	},
+	
 	/*$('#playButton').click(function () {
                        that.sliderAuto();
                    });
