@@ -189,11 +189,11 @@ Diaporama
     position: relative;
 }
 
-#playButton, #pauseButton {
+/*#playButton, #pauseButton {
     margin-right: 10px;
     position: relative;
     top: 10px;
-}
+}*/
 
 .slide {
     position: absolute;
