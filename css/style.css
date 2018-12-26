@@ -190,9 +190,9 @@ Diaporama
 }
 
 #playButton, #pauseButton {
-    margin-right: 100px;
+    margin-right: 10px;
     position: relative;
-    bottom: 0px;
+    top: 10px;
 }
 
 .slide {
