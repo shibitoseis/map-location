@@ -77,12 +77,12 @@ var Diaporama = {
 			that.avancerDiapo();
 		}, 5000);			
 	},
-	$('#playButton').click(function () {
+	/*$('#playButton').click(function () {
                        that.sliderAuto();
                    });
         $('#pauseButton').click(function () {
                        that.sliderOff();
-                   });
+                   });*/
 
 	sliderOff: function () {
 		clearInterval(slideInterval);
