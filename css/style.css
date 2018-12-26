@@ -192,9 +192,9 @@ Diaporama
 #playButton, #pauseButton {
     display: flex;
     z-index: 3;
-    margin-left: 50em;
+    margin-left: 20em;
     position: relative;
-    bottom: 20em;
+    bottom: 5em;
 }
 
 .slide {
