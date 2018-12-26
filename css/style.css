@@ -189,6 +189,12 @@ Diaporama
     position: relative;
 }
 
+#playButton, #pauseButton {
+    margin-left: 100px;
+    position: absolute;
+    bottom: 0px;
+}
+
 .slide {
     position: absolute;
     top: 0;
