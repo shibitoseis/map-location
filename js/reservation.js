@@ -46,8 +46,8 @@ var reservation = {
 		sessionStorage.statusReservation = true;
 		sessionStorage.nomStationReserver = currentStation.nom;
 		sessionStorage.dureeReservation = reservationValidity * 60;
-		localStorage.currentUsername = $('#prenom');
-		localStorage.currentUserfirstname = $('#nom');
+		localStorage.getItem('#prenom');
+		localStorage.getItem('#nom');
 	},
 
 // Affiche les différentes durée de la réservation
