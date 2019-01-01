@@ -69,21 +69,20 @@ var Diaporama = {
 		this.afficherDiapo ();
 	},
 
-	
+	/*$('#playButton').click(function () {
+                       that.sliderAuto();
+    });
+	$('#pauseButton').click(function () {
+                       that.sliderOff();
+    });*/
 
 	sliderAuto: function () {
 		var that = this;
 		slideInterval = setInterval(function () {
 			that.avancerDiapo();
-		}, 5000);			
+		}, 5000);
+					
 	},
-	
-	/*$('#playButton').click(function () {
-                       that.sliderAuto();
-                   });
-        $('#pauseButton').click(function () {
-                       that.sliderOff();
-                   });*/
 
 	sliderOff: function () {
 		clearInterval(slideInterval);
