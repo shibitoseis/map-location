@@ -14,6 +14,10 @@ var reservation = {
 			$('#infos-station').hide();
 			$('#searchStation').hide();
 			$('#btn-reserv').hide();
+			if(localStorage.getItem("nom")!= "undefined")
+			document.getElementById("nom").value=localStorage.getItem("nom");
+			if(localStorage.getItem("prenom")!= "undefined")
+			document.getElementById("prenom").value=localStorage.getItem("prenom");
 
 			// insére les données de la station choisie
 			infosReservation.setInfos();
@@ -46,13 +50,15 @@ var reservation = {
 	
 // Données contenues dans sessionStorage
 	webStorage : function() {
-		console.log(localStorage.getItem("nom"));
 		sessionStorage.statusReservation = true;
 		sessionStorage.nomStationReserver = currentStation.nom;
 		sessionStorage.dureeReservation = reservationValidity * 60;
-		var nomUtilisateur = $('nom').val(nomUtilisateur);
-		localStorage.setItem("nom", nomUtilisateur);
-		console.log(nomUtilisateur);
+		var nom = document.getElementById("nom").value;
+		var prenom = document.getElementById("prenom").value;
+		console.log(nom, prenom);
+		 // On enregistre les nom et prénom de l'utilisateur en local
+		  localStorage.setItem("nom", nom);   
+		  localStorage.setItem("prenom", prenom);
 	},
 
 // Affiche les différentes durée de la réservation
