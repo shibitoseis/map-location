@@ -580,6 +580,12 @@ i.fa {
     }
 }
 
+@media all and (max-width: 575px) {
+    #sign {
+        width: 90%;
+    }
+}
+
 /* ------------------------------
 
  Footer suscribe
